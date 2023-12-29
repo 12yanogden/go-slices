@@ -1,6 +1,7 @@
 package slices
 
 import (
+	"reflect"
 	"testing"
 
 	"github.com/12yanogden/strslices"
@@ -32,6 +33,16 @@ func TestRemoveEnd(t *testing.T) {
 	actual := Remove(slice, (len(slice) - 1))
 
 	if !strslices.Equals(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}
+
+func TestRemoveEmpty(t *testing.T) {
+	slices := [][]string{{}, {"a", "b"}, {}, {"c"}, {}}
+	expected := [][]string{{"a", "b"}, {"c"}}
+	actual := RemoveEmpty(slices)
+
+	if !reflect.DeepEqual(expected, actual) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
