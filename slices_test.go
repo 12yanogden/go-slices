@@ -11,7 +11,7 @@ func TestRemoveBeginning(t *testing.T) {
 	expected := []string{"b", "c", "d"}
 	actual := Remove(slice, 0)
 
-	if strslices.Equals(expected, actual) {
+	if !strslices.Equals(expected, actual) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
@@ -21,17 +21,17 @@ func TestRemoveMiddle(t *testing.T) {
 	expected := []string{"a", "b", "d"}
 	actual := Remove(slice, 2)
 
-	if strslices.Equals(expected, actual) {
+	if !strslices.Equals(expected, actual) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
 
 func TestRemoveEnd(t *testing.T) {
 	slice := []string{"a", "b", "c", "d"}
-	expected := []string{"a", "b", "d"}
+	expected := []string{"a", "b", "c"}
 	actual := Remove(slice, (len(slice) - 1))
 
-	if strslices.Equals(expected, actual) {
+	if !strslices.Equals(expected, actual) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
