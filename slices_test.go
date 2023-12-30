@@ -46,3 +46,14 @@ func TestRemoveEmpty(t *testing.T) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
+
+func TestPrepend(t *testing.T) {
+	slice := []string{"b", "c"}
+	item := "a"
+	expected := []string{"a", "b", "c"}
+	actual := Prepend(slice, item)
+
+	if !reflect.DeepEqual(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}

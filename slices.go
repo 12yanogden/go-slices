@@ -34,3 +34,7 @@ func Reverse[T any](slice []T) []T {
 
 	return reversed
 }
+
+func Prepend[T any](slice []T, item T) []T {
+	return append([]T{item}, slice...)
+}
