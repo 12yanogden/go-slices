@@ -11,11 +11,9 @@ func RemoveEmpty[T any](slices [][]T) [][]T {
 	// Determine which slices are empty
 	for i := range slices {
 		if len(slices[i]) == 0 {
-			emptyIndexes = append(emptyIndexes, i)
+			emptyIndexes = Prepend(emptyIndexes, i)
 		}
 	}
-
-	emptyIndexes = Reverse(emptyIndexes)
 
 	// Remove those slices
 	for _, index := range emptyIndexes {
