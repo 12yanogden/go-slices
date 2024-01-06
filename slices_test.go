@@ -57,3 +57,33 @@ func TestPrepend(t *testing.T) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
+
+func TestShiftWithEmpty(t *testing.T) {
+	slice := []string{}
+	expected := []string{}
+	actual := Shift[string](slice)
+
+	if !reflect.DeepEqual(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}
+
+func TestShiftWithOne(t *testing.T) {
+	slice := []string{"item"}
+	expected := []string{}
+	actual := Shift[string](slice)
+
+	if !reflect.DeepEqual(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}
+
+func TestShiftWithMany(t *testing.T) {
+	slice := []string{"item1", "item2"}
+	expected := []string{"item2"}
+	actual := Shift[string](slice)
+
+	if !reflect.DeepEqual(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}

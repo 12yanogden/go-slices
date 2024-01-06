@@ -36,3 +36,14 @@ func Reverse[T any](slice []T) []T {
 func Prepend[T any](slice []T, item T) []T {
 	return append([]T{item}, slice...)
 }
+
+func Shift[T any](slice []T) []T {
+	switch len(slice) {
+	case 0:
+		return slice
+	case 1:
+		return []T{}
+	default:
+		return slice[1:]
+	}
+}
