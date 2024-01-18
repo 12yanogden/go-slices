@@ -87,3 +87,13 @@ func TestShiftWithMany(t *testing.T) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
 	}
 }
+
+func TestIndexes(t *testing.T) {
+	slice := []string{"item1", "item2", "item3", "item4", "item5"}
+	expected := []int{0, 1, 2, 3, 4}
+	actual := Indexes(slice)
+
+	if !reflect.DeepEqual(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v\n", expected, actual)
+	}
+}

@@ -1,2 +1,4 @@
+github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142 h1:EGrD7BnCbABuuEyOAJ5fKXMLEaSW9eXDJH/obynI1vo=
+github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142/go.mod h1:QwFE7MGn0dB6lb/r/ANVvhNUHSQO5Y2uPUDVKIMmQZg=
 github.com/12yanogden/strslices v0.0.0-20231229185917-5c654540c797 h1:WylVyof1KJAjd0QOWI2MSm/dH0/KrUBPHGf1nspOM0Q=
 github.com/12yanogden/strslices v0.0.0-20231229185917-5c654540c797/go.mod h1:jZUaQR0gb2lRCInwPzjvVzOJx9xZdy/ri8Lbvo8utXk=

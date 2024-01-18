@@ -1,5 +1,9 @@
 package slices
 
+import (
+	"github.com/12yanogden/intslices"
+)
+
 // Remove an element from the slice by its index
 func Remove[T any](slice []T, i int) []T {
 	return append(slice[:i], slice[(i+1):]...)
@@ -46,4 +50,8 @@ func Shift[T any](slice []T) []T {
 	default:
 		return slice[1:]
 	}
+}
+
+func Indexes[T any](slice []T) []int {
+	return intslices.Seq(0, len(slice)-1)
 }
