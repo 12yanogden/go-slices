@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/12yanogden/strslices"
+	strslices "github.com/12yanogden/go-strslices"
 )
 
 func TestRemoveBeginning(t *testing.T) {

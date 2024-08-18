@@ -1,4 +1,4 @@
-github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142 h1:EGrD7BnCbABuuEyOAJ5fKXMLEaSW9eXDJH/obynI1vo=
-github.com/12yanogden/intslices v0.0.0-20240101183035-5fced076a142/go.mod h1:QwFE7MGn0dB6lb/r/ANVvhNUHSQO5Y2uPUDVKIMmQZg=
-github.com/12yanogden/strslices v0.0.0-20231229185917-5c654540c797 h1:WylVyof1KJAjd0QOWI2MSm/dH0/KrUBPHGf1nspOM0Q=
-github.com/12yanogden/strslices v0.0.0-20231229185917-5c654540c797/go.mod h1:jZUaQR0gb2lRCInwPzjvVzOJx9xZdy/ri8Lbvo8utXk=
+github.com/12yanogden/go-intslices v0.0.0-20240818211230-91bba23bf138 h1:23tEiy2XomQSVGlsbYUo2S8Y8uYvFk4/FZwrK3j7TSM=
+github.com/12yanogden/go-intslices v0.0.0-20240818211230-91bba23bf138/go.mod h1:0s7ftndqhFBzqgfMOx/5Ew4oooEdQ4DgcjaVr47JPjQ=
+github.com/12yanogden/go-strslices v0.0.0-20240818213453-8e5d4b424534 h1:8DJ1OUf4WAZSFMq24fWjwaOKHT39CxlU/g0xy2HxrVI=
+github.com/12yanogden/go-strslices v0.0.0-20240818213453-8e5d4b424534/go.mod h1:pe8kqyg7BndQwXgh/ojqoeIrs0veUF/UZ57qfyJoH3E=

@@ -1,7 +1,7 @@
 package slices
 
 import (
-	"github.com/12yanogden/intslices"
+	intslices "github.com/12yanogden/go-intslices"
 )
 
 // Remove an element from the slice by its index
