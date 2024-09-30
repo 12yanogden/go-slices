@@ -4,6 +4,17 @@ import (
 	intslices "github.com/12yanogden/go-intslices"
 )
 
+// Concatenate the slices given
+func Concat[T any](slices ...[]T) []T {
+	var concatenated []T
+
+	for _, slice := range slices {
+		concatenated = append(concatenated, slice...)
+	}
+
+	return concatenated
+}
+
 // Remove an element from the slice by its index
 func Remove[T any](slice []T, i int) []T {
 	return append(slice[:i], slice[(i+1):]...)

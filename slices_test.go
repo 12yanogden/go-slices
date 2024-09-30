@@ -7,6 +7,16 @@ import (
 	strslices "github.com/12yanogden/go-strslices"
 )
 
+func TestConcat(t *testing.T) {
+	slices := [][]string{{"a", "b"}, {"c", "d"}, {"e", "f"}}
+	expected := []string{"a", "b", "c", "d", "e", "f"}
+	actual := Concat[string](slices...)
+
+	if !strslices.Equals(expected, actual) {
+		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
+	}
+}
+
 func TestRemoveBeginning(t *testing.T) {
 	slice := []string{"a", "b", "c", "d"}
 	expected := []string{"b", "c", "d"}
