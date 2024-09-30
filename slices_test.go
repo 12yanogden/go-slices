@@ -10,7 +10,7 @@ import (
 func TestConcat(t *testing.T) {
 	slices := [][]string{{"a", "b"}, {"c", "d"}, {"e", "f"}}
 	expected := []string{"a", "b", "c", "d", "e", "f"}
-	actual := Concat[string](slices...)
+	actual := Concat(slices...)
 
 	if !strslices.Equals(expected, actual) {
 		t.Fatalf("\nExpected:\t%#v\nActual:\t\t%#v", expected, actual)
